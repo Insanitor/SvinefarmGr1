@@ -23,6 +23,6 @@ namespace SvinefarmGr1.Models.FarmManager
             set { barnName = value; }
         }
 
-
+        //public Farm Farm { get; set; }
     }
 }
