@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using SvinefarmGr1.Models.FarmManager;
 
 namespace SvinefarmGr1.Models
 {
@@ -22,6 +23,8 @@ namespace SvinefarmGr1.Models
 
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        public DbSet<Farm> Farms {get; set;}
+        public DbSet<Barn> Barns { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

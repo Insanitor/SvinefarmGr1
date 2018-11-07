@@ -253,6 +253,10 @@
     <Compile Include="Migrations\201811071015001_InitialDatabase.Designer.cs">
       <DependentUpon>201811071015001_InitialDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811071020214_AddFarmAndBarnToDatabase.cs" />
+    <Compile Include="Migrations\201811071020214_AddFarmAndBarnToDatabase.Designer.cs">
+      <DependentUpon>201811071020214_AddFarmAndBarnToDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FarmManager\BoxType.cs" />
@@ -395,6 +399,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201811071015001_InitialDatabase.resx">
       <DependentUpon>201811071015001_InitialDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811071020214_AddFarmAndBarnToDatabase.resx">
+      <DependentUpon>201811071020214_AddFarmAndBarnToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
