@@ -30,6 +30,6 @@ namespace SvinefarmGr1.Models.FarmManager
             set { boxType = value; }
         }
 
-
+        public Barn Barn { get; set; }
     }
 }

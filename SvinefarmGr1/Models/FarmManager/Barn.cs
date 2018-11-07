@@ -24,5 +24,7 @@ namespace SvinefarmGr1.Models.FarmManager
         }
 
         public Farm Farm { get; set; }
+
+        public ICollection<Box> Boxes { get; set; }
     }
 }
