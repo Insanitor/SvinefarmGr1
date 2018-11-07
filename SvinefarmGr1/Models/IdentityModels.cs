@@ -25,6 +25,7 @@ namespace SvinefarmGr1.Models
     {
         public DbSet<Farm> Farms {get; set;}
         public DbSet<Barn> Barns { get; set; }
+        public DbSet<Box> Boxes { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {
