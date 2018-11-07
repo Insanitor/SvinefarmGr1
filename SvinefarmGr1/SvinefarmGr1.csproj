@@ -265,6 +265,14 @@
     <Compile Include="Migrations\201811071058122_AddPigAndBoxToDatabase.Designer.cs">
       <DependentUpon>201811071058122_AddPigAndBoxToDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811071144442_AddCHRTagToPig.cs" />
+    <Compile Include="Migrations\201811071144442_AddCHRTagToPig.Designer.cs">
+      <DependentUpon>201811071144442_AddCHRTagToPig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201811071155037_AddTemperatureSensorToDB.cs" />
+    <Compile Include="Migrations\201811071155037_AddTemperatureSensorToDB.Designer.cs">
+      <DependentUpon>201811071155037_AddTemperatureSensorToDB.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FarmManager\BoxType.cs" />
@@ -276,6 +284,8 @@
     <Compile Include="Models\MeViewModels.cs" />
     <Compile Include="Models\PigManager\Pig.cs" />
     <Compile Include="Models\PigManager\PigType.cs" />
+    <Compile Include="Models\SensorManager\Sensor.cs" />
+    <Compile Include="Models\SensorManager\TemperatureSensor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Providers\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
@@ -374,6 +384,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Models\FeedManager\" />
+    <Folder Include="Models\UserManager\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -416,6 +428,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811071058122_AddPigAndBoxToDatabase.resx">
       <DependentUpon>201811071058122_AddPigAndBoxToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811071144442_AddCHRTagToPig.resx">
+      <DependentUpon>201811071144442_AddCHRTagToPig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811071155037_AddTemperatureSensorToDB.resx">
+      <DependentUpon>201811071155037_AddTemperatureSensorToDB.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
