@@ -251,6 +251,7 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Boxtype.cs" />
     <Compile Include="Models\Barn.cs" />
     <Compile Include="Models\Box.cs" />
     <Compile Include="Models\Farm.cs" />
