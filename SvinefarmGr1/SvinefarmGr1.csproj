@@ -261,6 +261,10 @@
     <Compile Include="Migrations\201811071032364_AddBarnAndBoxToDatabase.Designer.cs">
       <DependentUpon>201811071032364_AddBarnAndBoxToDatabase.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811071058122_AddPigAndBoxToDatabase.cs" />
+    <Compile Include="Migrations\201811071058122_AddPigAndBoxToDatabase.Designer.cs">
+      <DependentUpon>201811071058122_AddPigAndBoxToDatabase.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FarmManager\BoxType.cs" />
@@ -409,6 +413,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811071032364_AddBarnAndBoxToDatabase.resx">
       <DependentUpon>201811071032364_AddBarnAndBoxToDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811071058122_AddPigAndBoxToDatabase.resx">
+      <DependentUpon>201811071058122_AddPigAndBoxToDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

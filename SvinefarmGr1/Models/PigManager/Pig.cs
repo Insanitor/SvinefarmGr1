@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using SvinefarmGr1.Models.FarmManager;
 
 namespace SvinefarmGr1.Models.PigManager
 {
@@ -23,5 +24,6 @@ namespace SvinefarmGr1.Models.PigManager
             set { pigType = value; }
         }
 
+        public Box Box { get; set; }
     }
 }

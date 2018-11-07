@@ -4,6 +4,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using SvinefarmGr1.Models.FarmManager;
+using SvinefarmGr1.Models.PigManager;
 
 namespace SvinefarmGr1.Models
 {
@@ -26,6 +27,8 @@ namespace SvinefarmGr1.Models
         public DbSet<Farm> Farms {get; set;}
         public DbSet<Barn> Barns { get; set; }
         public DbSet<Box> Boxes { get; set; }
+        //public DbSet<BoxType> BoxTypes { get; set; } //Marc vil gerne have den står der
+        public DbSet<Pig> Pigs { get; set; }
         public ApplicationDbContext()
             : base("DefaultConnection", throwIfV1Schema: false)
         {

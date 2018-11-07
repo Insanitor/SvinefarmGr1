@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using SvinefarmGr1.Models.PigManager;
 
 namespace SvinefarmGr1.Models.FarmManager
 {
@@ -31,5 +32,7 @@ namespace SvinefarmGr1.Models.FarmManager
         }
 
         public Barn Barn { get; set; }
-    }
+
+        public ICollection<Pig> Pigs { get; set; }
+    } 
 }
