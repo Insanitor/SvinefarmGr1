@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SvinefarmGr1.Models
+namespace SvinefarmGr1.Models.FarmManager
 {
     
     public class Farm

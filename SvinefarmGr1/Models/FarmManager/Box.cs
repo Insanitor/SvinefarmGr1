@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace SvinefarmGr1.Models
+namespace SvinefarmGr1.Models.FarmManager
 {
     public class Box
     {
@@ -22,6 +22,13 @@ namespace SvinefarmGr1.Models
             set { boxName = value; }
         }
 
+        private BoxType boxType;
+
+        public BoxType BoxType
+        {
+            get { return boxType; }
+            set { boxType = value; }
+        }
 
 
     }
