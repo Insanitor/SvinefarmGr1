@@ -273,6 +273,10 @@
     <Compile Include="Migrations\201811071155037_AddTemperatureSensorToDB.Designer.cs">
       <DependentUpon>201811071155037_AddTemperatureSensorToDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201811071224281_AddBarnToTemperatureSensor.cs" />
+    <Compile Include="Migrations\201811071224281_AddBarnToTemperatureSensor.Designer.cs">
+      <DependentUpon>201811071224281_AddBarnToTemperatureSensor.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\FarmManager\BoxType.cs" />
@@ -284,6 +288,8 @@
     <Compile Include="Models\MeViewModels.cs" />
     <Compile Include="Models\PigManager\Pig.cs" />
     <Compile Include="Models\PigManager\PigType.cs" />
+    <Compile Include="Models\SensorManager\IBarnSensor.cs" />
+    <Compile Include="Models\SensorManager\IBoxSensor.cs" />
     <Compile Include="Models\SensorManager\Sensor.cs" />
     <Compile Include="Models\SensorManager\TemperatureSensor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -434,6 +440,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201811071155037_AddTemperatureSensorToDB.resx">
       <DependentUpon>201811071155037_AddTemperatureSensorToDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201811071224281_AddBarnToTemperatureSensor.resx">
+      <DependentUpon>201811071224281_AddBarnToTemperatureSensor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
