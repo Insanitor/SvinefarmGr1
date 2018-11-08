@@ -445,6 +445,12 @@
       <DependentUpon>201811071224281_AddBarnToTemperatureSensor.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SensorLib\SensorLib.csproj">
+      <Project>{b13a8576-1519-414f-9dd7-7b5006fb8ae7}</Project>
+      <Name>SensorLib</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
