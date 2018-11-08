@@ -53,14 +53,17 @@ namespace SensorLib
             InitializeGetIPsAndMac();
             IPAndMac m = list.SingleOrDefault(x => x.MAC == macAddress);
             if (m == null)
-                return null;
+                return "";
             return m.IP;
         }
 
         public static string FindMacFromIPAddress(string ip)
         {
             InitializeGetIPsAndMac();
-            return list.SingleOrDefault(x => x.IP == ip).MAC;
+            IPAndMac m = list.SingleOrDefault(x => x.IP == ip);
+            if (m == null)
+                return "";
+            return m.MAC;
         }
 
         private class IPAndMac
