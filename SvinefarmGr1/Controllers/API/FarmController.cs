@@ -23,14 +23,25 @@ namespace SvinefarmGr1.Controllers.API
         }
 
         // GET: api/Farm/5
-        public string Get(int id)
+        [HttpGet]
+        public IHttpActionResult Get(int id)
         {
-            return "value";
+            using (var context = new ApplicationDbContext())
+            {
+                var farm = context.Farms.SingleOrDefault(x => x.FarmId == id);
+                return Ok(farm);
+            }
+
         }
 
         // POST: api/Farm
-        public void Post([FromBody]string value)
+        public IHttpActionResult Post([FromBody]string value)
         {
+            using (var context = new ApplicationDbContext())
+            {
+                context.Farms.Add(new Models.FarmManager.Farm(value));
+                return Ok();
+            }
         }
 
         // PUT: api/Farm/5
