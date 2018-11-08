@@ -80,7 +80,7 @@ namespace SensorLib
         public static string ReadwithMAC(string mac, string message)
         {
             string _mac = mac.Replace(':', '-');
-            string ip = IPMacMapper.FindIPFromMacAddress("00-02-f7-f2-e1-05");
+            string ip = IPMacMapper.FindIPFromMacAddress(mac);
             IPAddress ipAddress = IPAddress.Parse(ip);
             return StartClient(ipAddress, message);
         }
