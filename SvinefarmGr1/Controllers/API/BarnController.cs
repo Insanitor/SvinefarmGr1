@@ -8,52 +8,46 @@ using System.Web.Http;
 
 namespace SvinefarmGr1.Controllers.API
 {
-    public class FarmController : ApiController
+    public class BarnController : ApiController
     {
-        // GET: api/Farm
+        // GET: api/Barn
         [HttpGet]
         public IHttpActionResult Get()
         {
             using (var context = new ApplicationDbContext())
             {
-                var farms = context.Farms.ToList();
-                return Ok(farms);
+                var barns = context.Barns.ToList();
+                return Ok(barns);
             }
-
         }
 
-        // GET: api/Farm/5
+        // GET: api/Barn/5
         [HttpGet]
         public IHttpActionResult Get(int id)
         {
             using (var context = new ApplicationDbContext())
             {
-                var farm = context.Farms.SingleOrDefault(x => x.FarmId == id);
-                if(farm == null)
-                {
-                    return NotFound();
-                }
-                return Ok(farm);
+                var barn = context.Barns.SingleOrDefault(x => x.BarnId == id);
+                return Ok(barn);
             }
-
         }
 
-        // POST: api/Farm
+        // POST: api/Barn
         public IHttpActionResult Post([FromBody]string value)
         {
             using (var context = new ApplicationDbContext())
             {
-                context.Farms.Add(new Models.FarmManager.Farm(value));
+                context.Barns.Add(new Models.FarmManager.Barn(value));
                 return Ok();
             }
         }
 
-        // PUT: api/Farm/5
+        // PUT: api/Barn/5
         public void Put(int id, [FromBody]string value)
         {
         }
 
-        // DELETE: api/Farm/5
+        // DELETE: api/Barn/5
         public void Delete(int id)
         {
         }
