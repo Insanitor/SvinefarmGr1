@@ -26,6 +26,7 @@ namespace SvinefarmGr1.Models.FarmManager
 
         public ICollection<Barn> Barns { get; set; }
 
+        public Farm(){}
         public Farm(string farmName)
         {
             FarmName = farmName;
