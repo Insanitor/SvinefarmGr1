@@ -4,6 +4,6 @@ namespace SvinefarmGr1.Models.SensorManager
 {
     public interface IBarnSensor
     {
-        IBarn Barn {get;set;}
+        Barn Barn {get;set;}
     }
 }

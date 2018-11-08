@@ -283,7 +283,6 @@
     <Compile Include="Models\FarmManager\Barn.cs" />
     <Compile Include="Models\FarmManager\Box.cs" />
     <Compile Include="Models\FarmManager\Farm.cs" />
-    <Compile Include="Models\FarmManager\IBarn.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MeViewModels.cs" />

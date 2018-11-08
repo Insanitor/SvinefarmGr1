@@ -8,6 +8,6 @@ namespace SvinefarmGr1.Models.SensorManager
 {
     public class TemperatureSensor : Sensor, IBarnSensor
     {
-        public IBarn Barn { get; set; }
+        public Barn Barn { get; set; }
     }
 }
